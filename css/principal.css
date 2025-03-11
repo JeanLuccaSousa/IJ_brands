@@ -15,7 +15,7 @@ html {
 
 /* Inicio header */
 .nav {
-    background-color: #181818;
+    background-color: #181818; 
     /* background-color: #ebe9e5; */
     height: 80px;
     width: 100%;
@@ -45,7 +45,7 @@ html {
     display: flex;
     align-items: center;
     list-style: none;
-    margin: 28px;
+    margin: 30px;
 }
 
 .nav-list a {
@@ -58,12 +58,30 @@ html {
     color: #fff;
 }
 
+.languages {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 35px;
+    font-size: 14px;
+}
+
+.languages a {
+    text-decoration: none;
+    color: #ddd;
+    padding: 5px;
+}
+
+.languages a:hover {
+    color: #fff;
+}
+
 /* Fim header */
 
 /* Inicio main */
 .main {
     width: 100%;
-    background-color: #000;
+    background-color: #000; 
     /* background-color: #c722cd; */
     height: calc(100vh - 80px); /* Esse 80px é a altura do meu header que estou descontando */
     background-image: url("#");

@@ -216,15 +216,15 @@ html {
     cursor: pointer;
 }
 
-footer {
+/* footer {
     width: 100%;
     background-color: #ebe9e5;
-    /* background-color: #181818; */
+    background-color: #181818;
     padding: 60px 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* flex-direction: column; */
+    flex-direction: column;
     color: #000;
 }
 
@@ -235,6 +235,25 @@ footer a {
 
 footer p {
     margin-left: 12px;
+} */
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    background-color: #ebe9e5;
+    color: #000;
+    padding: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.footer-column a {
+    display: flex;
+    flex-direction: column;
 }
 
 

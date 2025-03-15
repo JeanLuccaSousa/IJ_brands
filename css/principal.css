@@ -149,6 +149,10 @@ html {
     color: #fff;
 }
 
+.about-portfolio, .about-sobre{
+    color: #000;
+}
+
 .about div{
     max-width: 50%;
     padding-right: 40px;

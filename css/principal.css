@@ -167,6 +167,13 @@ html {
  .portfolio-session {
     
     background-color: var(--secondary-color);
+    margin: 0;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
     
    
 } 
@@ -295,7 +302,7 @@ footer p {
     display: flex;
     flex-direction: column;
 }
-
+/* 
 .card-container {
     
     display: flex;
@@ -303,7 +310,7 @@ footer p {
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 60px;
-    /* padding-top: 50px; */
+    /* padding-top: 50px; 
     margin-bottom: 80px;
   }
   .card {
@@ -318,9 +325,39 @@ footer p {
   .card img {
     width: 100%;
     border-radius: 8px;
-  }
+  }*/
   .card h3 {
     margin: 10px 0;
+  } 
+
+  /* Container dos cards */
+.image-card-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens "quebrem" para a próxima linha */
+    gap: 20px; /* Espaço entre os itens */
+    max-width: 800px;
+    justify-content: space-between; /* Espaça as imagens uniformemente */
+    margin-top: 60px;
+    /* padding-top: 50px; */
+    margin-bottom: 80px;
+    padding: 20px;
+  }
+  
+  /* Estilo dos cards */
+  .card {
+    flex: 1 1 calc(50% - 20px); /* Ocupa 50% do espaço menos o gap */
+    max-width: calc(50% - 20px); /* Garante 2 imagens por linha */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    display: block;
   }
 
 
@@ -375,3 +412,10 @@ footer p {
         margin: 0;
     }
 }
+
+@media (max-width: 600px) {
+    .card {
+      flex: 1 1 100%; /* Em telas menores, ocupa 100% da largura */
+      max-width: 100%;
+    }
+  }
